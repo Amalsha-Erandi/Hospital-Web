@@ -1,0 +1,159 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background-color: #2E4053;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Side Navigation */
+        .side-nav {
+            width: 250px;
+            background-color: #34495E;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .nav-items {
+            list-style: none;
+        }
+
+        .nav-item {
+            padding: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            background-color: #2980B9;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Doctor Management Specific Styles */
+        .header-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 300px;
+        }
+
+        .filter-select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-width: 150px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th, .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .data-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-primary { background-color: #2980B9; }
+        .btn-success { background-color: #2ECC71; }
+        .btn-danger { background-color: #E74C3C; }
+        .btn-warning { background-color: #F1C40F; }
+
+        .status-available {
+            color: #2ECC71;
+            font-weight: bold;
+        }
+
+        .status-unavailable {
+            color: #E74C3C;
+            font-weight: bold;
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            background-color: #E8F6F3;
+            color: #148F77;
+        }
+
+        .doctor-actions {
+            display: flex;
+            gap: 5px;
+        }

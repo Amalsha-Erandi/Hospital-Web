@@ -1,0 +1,160 @@
+/* Inherit existing global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+/* Header styles modified for services page */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/h.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Navigation Menu - inherited from main page */
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Services Page Specific Styles */
+.services-header {
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.services-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.service-category {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.service-category:nth-child(even) {
+    background-color: #fff;
+}
+
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.book-service {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.book-service:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-header h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        margin: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
